@@ -87,7 +87,9 @@ int WordCount::decrWordCount(std::string word) {
       }
     }
   }
-  return 0;
+
+  // valid word, but not in table → return -1 (not found)
+  return -1;
 }
 
 
